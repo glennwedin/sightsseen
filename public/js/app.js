@@ -60,7 +60,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	__webpack_require__(231);
+	__webpack_require__(230);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25216,19 +25216,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _LoadscreenComponent = __webpack_require__(221);
-
-	var _LoadscreenComponent2 = _interopRequireDefault(_LoadscreenComponent);
-
-	var _PointscreenComponent = __webpack_require__(222);
+	var _PointscreenComponent = __webpack_require__(221);
 
 	var _PointscreenComponent2 = _interopRequireDefault(_PointscreenComponent);
 
-	var _reactAddonsCssTransitionGroup = __webpack_require__(224);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(223);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _tools = __webpack_require__(223);
+	var _tools = __webpack_require__(222);
 
 	var _tools2 = _interopRequireDefault(_tools);
 
@@ -25239,8 +25235,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	//import ThingToSeeDialog from "./ThingToSeeDialogComponent";
-
 
 	//TODO:
 	// All adding of markers should use this.addMarkers
@@ -25562,14 +25556,6 @@
 					pointscreen = _react2.default.createElement(_PointscreenComponent2.default, { selectedPoint: this.state.selectedPoint, parent: this });
 				}
 
-				/*
-	   let thingToSeeDialog = ""
-	   if(this.state.currentPos) {
-	   	thingToSeeDialog = <ThingToSeeDialog key="thingtosee" currentPos={this.state.currentPos} parent={this} />
-	   }*/
-				//Loadscreen må være egen komponent som kan håndtere både progressbar og teksten Loading
-
-				//Dialog må i egen komponent
 				return _react2.default.createElement(
 					"div",
 					{ id: "mainwrapper" },
@@ -25705,70 +25691,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LoadscreenComponent = function (_React$Component) {
-		_inherits(LoadscreenComponent, _React$Component);
-
-		function LoadscreenComponent() {
-			_classCallCheck(this, LoadscreenComponent);
-
-			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LoadscreenComponent).call(this));
-
-			_this.state = {
-				loading: false,
-				progress: 0
-			};
-			return _this;
-		}
-
-		_createClass(LoadscreenComponent, [{
-			key: "render",
-			value: function render() {
-				var style = {
-					width: this.state.progress
-				};
-				return _react2.default.createElement(
-					"div",
-					{ className: lscreen },
-					_react2.default.createElement(
-						"div",
-						{ className: "text" },
-						"Loading. . ."
-					),
-					_react2.default.createElement("div", { className: "progressbar", style: style })
-				);
-			}
-		}]);
-
-		return LoadscreenComponent;
-	}(_react2.default.Component);
-
-	exports.default = LoadscreenComponent;
-
-/***/ },
-/* 222 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _tools = __webpack_require__(223);
+	var _tools = __webpack_require__(222);
 
 	var _tools2 = _interopRequireDefault(_tools);
 
@@ -25920,7 +25843,7 @@
 	exports.default = PointscreenComponent;
 
 /***/ },
-/* 223 */
+/* 222 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -26012,13 +25935,13 @@
 	exports.default = tools;
 
 /***/ },
-/* 224 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(225);
+	module.exports = __webpack_require__(224);
 
 /***/ },
-/* 225 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26039,8 +25962,8 @@
 
 	var assign = __webpack_require__(39);
 
-	var ReactTransitionGroup = __webpack_require__(226);
-	var ReactCSSTransitionGroupChild = __webpack_require__(228);
+	var ReactTransitionGroup = __webpack_require__(225);
+	var ReactCSSTransitionGroupChild = __webpack_require__(227);
 
 	function createTransitionTimeoutPropValidator(transitionType) {
 	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
@@ -26106,7 +26029,7 @@
 	module.exports = ReactCSSTransitionGroup;
 
 /***/ },
-/* 226 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26123,7 +26046,7 @@
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var ReactTransitionChildMapping = __webpack_require__(227);
+	var ReactTransitionChildMapping = __webpack_require__(226);
 
 	var assign = __webpack_require__(39);
 	var emptyFunction = __webpack_require__(15);
@@ -26316,7 +26239,7 @@
 	module.exports = ReactTransitionGroup;
 
 /***/ },
-/* 227 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26419,7 +26342,7 @@
 	module.exports = ReactTransitionChildMapping;
 
 /***/ },
-/* 228 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26439,8 +26362,8 @@
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(3);
 
-	var CSSCore = __webpack_require__(229);
-	var ReactTransitionEvents = __webpack_require__(230);
+	var CSSCore = __webpack_require__(228);
+	var ReactTransitionEvents = __webpack_require__(229);
 
 	var onlyChild = __webpack_require__(156);
 
@@ -26589,7 +26512,7 @@
 	module.exports = ReactCSSTransitionGroupChild;
 
 /***/ },
-/* 229 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -26692,7 +26615,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 230 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26806,16 +26729,16 @@
 	module.exports = ReactTransitionEvents;
 
 /***/ },
-/* 231 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(232);
+	var content = __webpack_require__(231);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(234)(content, {});
+	var update = __webpack_require__(233)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26832,10 +26755,10 @@
 	}
 
 /***/ },
-/* 232 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(233)();
+	exports = module.exports = __webpack_require__(232)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);", ""]);
 
@@ -26846,7 +26769,7 @@
 
 
 /***/ },
-/* 233 */
+/* 232 */
 /***/ function(module, exports) {
 
 	/*
@@ -26902,7 +26825,7 @@
 
 
 /***/ },
-/* 234 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*

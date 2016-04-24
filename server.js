@@ -66,7 +66,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _api = __webpack_require__(159);
+	var _api = __webpack_require__(158);
 
 	var _api2 = _interopRequireDefault(_api);
 
@@ -18881,19 +18881,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _LoadscreenComponent = __webpack_require__(155);
-
-	var _LoadscreenComponent2 = _interopRequireDefault(_LoadscreenComponent);
-
-	var _PointscreenComponent = __webpack_require__(156);
+	var _PointscreenComponent = __webpack_require__(155);
 
 	var _PointscreenComponent2 = _interopRequireDefault(_PointscreenComponent);
 
-	var _reactAddonsCssTransitionGroup = __webpack_require__(158);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(157);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
-	var _tools = __webpack_require__(157);
+	var _tools = __webpack_require__(156);
 
 	var _tools2 = _interopRequireDefault(_tools);
 
@@ -18904,8 +18900,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	//import ThingToSeeDialog from "./ThingToSeeDialogComponent";
-
 
 	//TODO:
 	// All adding of markers should use this.addMarkers
@@ -19227,14 +19221,6 @@
 					pointscreen = _react2.default.createElement(_PointscreenComponent2.default, { selectedPoint: this.state.selectedPoint, parent: this });
 				}
 
-				/*
-	   let thingToSeeDialog = ""
-	   if(this.state.currentPos) {
-	   	thingToSeeDialog = <ThingToSeeDialog key="thingtosee" currentPos={this.state.currentPos} parent={this} />
-	   }*/
-				//Loadscreen må være egen komponent som kan håndtere både progressbar og teksten Loading
-
-				//Dialog må i egen komponent
 				return _react2.default.createElement(
 					"div",
 					{ id: "mainwrapper" },
@@ -19370,70 +19356,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LoadscreenComponent = function (_React$Component) {
-		_inherits(LoadscreenComponent, _React$Component);
-
-		function LoadscreenComponent() {
-			_classCallCheck(this, LoadscreenComponent);
-
-			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LoadscreenComponent).call(this));
-
-			_this.state = {
-				loading: false,
-				progress: 0
-			};
-			return _this;
-		}
-
-		_createClass(LoadscreenComponent, [{
-			key: "render",
-			value: function render() {
-				var style = {
-					width: this.state.progress
-				};
-				return _react2.default.createElement(
-					"div",
-					{ className: lscreen },
-					_react2.default.createElement(
-						"div",
-						{ className: "text" },
-						"Loading. . ."
-					),
-					_react2.default.createElement("div", { className: "progressbar", style: style })
-				);
-			}
-		}]);
-
-		return LoadscreenComponent;
-	}(_react2.default.Component);
-
-	exports.default = LoadscreenComponent;
-
-/***/ },
-/* 156 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _tools = __webpack_require__(157);
+	var _tools = __webpack_require__(156);
 
 	var _tools2 = _interopRequireDefault(_tools);
 
@@ -19585,7 +19508,7 @@
 	exports.default = PointscreenComponent;
 
 /***/ },
-/* 157 */
+/* 156 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -19677,13 +19600,13 @@
 	exports.default = tools;
 
 /***/ },
-/* 158 */
+/* 157 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-addons-css-transition-group");
 
 /***/ },
-/* 159 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19696,23 +19619,23 @@
 
 	var _express2 = _interopRequireDefault(_express);
 
-	var _mongoose = __webpack_require__(160);
+	var _mongoose = __webpack_require__(159);
 
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 
-	var _multer = __webpack_require__(161);
+	var _multer = __webpack_require__(160);
 
 	var _multer2 = _interopRequireDefault(_multer);
 
-	var _sharp = __webpack_require__(162);
+	var _sharp = __webpack_require__(161);
 
 	var _sharp2 = _interopRequireDefault(_sharp);
 
-	var _db = __webpack_require__(163);
+	var _db = __webpack_require__(162);
 
 	var _db2 = _interopRequireDefault(_db);
 
-	var _fs = __webpack_require__(164);
+	var _fs = __webpack_require__(163);
 
 	var _fs2 = _interopRequireDefault(_fs);
 
@@ -19721,7 +19644,8 @@
 	var apirouter = _express2.default.Router();
 
 	//The path to where the uploaded images are stored
-	var imgpath = '/var/www/sightssen/uploads';
+	//var imgpath = '/var/www/sightssen/uploads/';
+	var imgpath = "C:/users/glenn/desktop/Prosjekter/sightsseen/public/uploads/";
 
 	var multerStorage = _multer2.default.diskStorage({
 		destination: function destination(req, file, cb) {
@@ -19839,25 +19763,25 @@
 	exports.default = apirouter;
 
 /***/ },
-/* 160 */
+/* 159 */
 /***/ function(module, exports) {
 
 	module.exports = require("mongoose");
 
 /***/ },
-/* 161 */
+/* 160 */
 /***/ function(module, exports) {
 
 	module.exports = require("multer");
 
 /***/ },
-/* 162 */
+/* 161 */
 /***/ function(module, exports) {
 
 	module.exports = require("sharp");
 
 /***/ },
-/* 163 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19866,7 +19790,7 @@
 		value: true
 	});
 
-	var _mongoose = __webpack_require__(160);
+	var _mongoose = __webpack_require__(159);
 
 	var _mongoose2 = _interopRequireDefault(_mongoose);
 
@@ -19947,7 +19871,7 @@
 	exports.default = methods;
 
 /***/ },
-/* 164 */
+/* 163 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");

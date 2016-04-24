@@ -1,7 +1,5 @@
 import React from "react";
-import Loadscreen from "./LoadscreenComponent";
 import Pointscreen from "./PointscreenComponent";
-//import ThingToSeeDialog from "./ThingToSeeDialogComponent";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import tools from "../utils/tools";
 
@@ -290,15 +288,8 @@ export default class MapComponent extends React.Component {
 		if(this.state.selectedPoint) {
 			pointscreen = <Pointscreen selectedPoint={this.state.selectedPoint} parent={this} />
 		}
+		
 
-		/*
-		let thingToSeeDialog = ""
-		if(this.state.currentPos) {
-			thingToSeeDialog = <ThingToSeeDialog key="thingtosee" currentPos={this.state.currentPos} parent={this} />
-		}*/
-		//Loadscreen må være egen komponent som kan håndtere både progressbar og teksten Loading
-
-		//Dialog må i egen komponent
 		return (
 			<div id="mainwrapper">
 				<div className={lscreen} data-progress={this.state.loadProgress}>

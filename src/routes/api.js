@@ -7,7 +7,7 @@ import fs from "fs";
 var apirouter = express.Router();
 
 //The path to where the uploaded images are stored
-var imgpath = '/var/www/sightssen/uploads';
+var imgpath = '/var/www/sightssen/uploads/'; //NOTE: The last slash is needed!
 
 var multerStorage = multer.diskStorage({
     destination: function (req, file, cb) {
